@@ -48,16 +48,16 @@ EXAMPLES = r'''
   win_dns_client:
     adapter_names: '*'
     dns_servers:
-    - 192.168.34.5
-    - 192.168.34.6
+      - 192.168.34.5
+      - 192.168.34.6
     log_path: C:\dns_log.txt
 
 - name: Set IPv6 DNS servers on the adapter named Ethernet
   win_dns_client:
     adapter_names: Ethernet
     dns_servers:
-    - '2001:db8::2'
-    - '2001:db8::3'
+      - '2001:db8::2'
+      - '2001:db8::3'
 
 - name: Configure all adapters whose names begin with Ethernet to use DHCP-assigned DNS values
   win_dns_client:
